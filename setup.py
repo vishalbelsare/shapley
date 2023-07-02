@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 
 on_rtd = os.environ.get("READTHEDOCS") == "True"
 
-install_requires = ["numpy<1.21", "scipy", "six"]
+install_requires = ["numpy", "scipy", "six"]
 
 if not on_rtd:
     install_requires.append("numba")
@@ -37,13 +37,13 @@ keywords = [
 setup(
     name="shapley",
     packages=find_packages(),
-    version="1.0.2",
+    version="1.0.3",
     license="MIT",
     description="A general purpose library to quantify the value of classifiers in an ensemble.",
     author="Benedek Rozemberczki",
     author_email="benedek.rozemberczki@gmail.com",
     url="https://github.com/benedekrozemberczki/shapley",
-    download_url="https://github.com/benedekrozemberczki/shapley/archive/v_10002.tar.gz",
+    download_url="https://github.com/benedekrozemberczki/shapley/archive/v_10003.tar.gz",
     keywords=keywords,
     install_requires=install_requires,
     setup_requires=setup_requires,
